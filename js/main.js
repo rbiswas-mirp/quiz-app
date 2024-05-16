@@ -108,7 +108,7 @@ function showScore(correctAnswers, allQuestions) {
 let counter;
 
 function startTimer(time) {
-    counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 99000);
 
     function timer() {
         document.querySelector(".second").textContent = time;
