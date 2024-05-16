@@ -5,7 +5,7 @@ document.querySelector(".btn-start").addEventListener("click", () => {
     document.querySelector(".quiz-box").classList.add("active");
     showQuestion(quiz.callQuestion());
     showNumber(quiz.questionIndex + 1, quiz.questions.length);
-    startTimer(99);
+    startTimer(10);
     startLine();
 });
 
@@ -14,7 +14,7 @@ document.querySelector(".next").addEventListener("click", () => {
     if (quiz.questions.length > quiz.questionIndex + 1) {
         document.querySelector(".quiz-box").classList.add("active");
         clearInterval(counter);
-        startTimer(99);
+        startTimer(10);
         clearInterval(counterLine);
         startLine();
         quiz.questionIndex++;
@@ -108,7 +108,7 @@ function showScore(correctAnswers, allQuestions) {
 let counter;
 
 function startTimer(time) {
-    counter = setInterval(timer, 99000);
+    counter = setInterval(timer, 1000);
 
     function timer() {
         document.querySelector(".second").textContent = time;
