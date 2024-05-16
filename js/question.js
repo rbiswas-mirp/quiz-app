@@ -22,10 +22,11 @@ class Question {
 }
 
 let questions = [
-    new Question("What is the capital of Azerbaijan?", {
-        a: "Baku",
-        b: "Sumgait",
-        c: "Ganja"
+    new Question("What was our first date like?", {
+        a: "Romantic and unforgettable",
+        b: "A bit awkward but sweet",
+        c: "An adventure we’ll always remember"
+        d: "We can’t agree on the details"
     }, "a"),
     new Question("When is Triumph Day?", {
         a: "28 May",
