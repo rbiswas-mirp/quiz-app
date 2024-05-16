@@ -5,7 +5,7 @@ document.querySelector(".btn-start").addEventListener("click", () => {
     document.querySelector(".quiz-box").classList.add("active");
     showQuestion(quiz.callQuestion());
     showNumber(quiz.questionIndex + 1, quiz.questions.length);
-    startTimer(10);
+    startTimer(99);
     startLine();
 });
 
@@ -14,7 +14,7 @@ document.querySelector(".next").addEventListener("click", () => {
     if (quiz.questions.length > quiz.questionIndex + 1) {
         document.querySelector(".quiz-box").classList.add("active");
         clearInterval(counter);
-        startTimer(10);
+        startTimer(99);
         clearInterval(counterLine);
         startLine();
         quiz.questionIndex++;
